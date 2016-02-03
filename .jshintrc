@@ -1,0 +1,25 @@
+{
+	"indent": 			1,
+	"esversion": 		6,
+	"browser": 			true,
+	"devel": 			true,
+	"strict": 			"global",
+	"globals": {
+		"escape": 		true,
+		"unescape": 	true,
+		"ajax": 		true,
+		"$": 			true,
+		"$$": 			true,
+		"app": 			true,
+		"md5": 			true,
+		"humane": 		true,
+		"Shepherd": 	true,
+		"eowEl": 		true,
+		"eowTabs": 		true,
+		"AutoComplete": true,
+		"refreshDom": 	true,
+		"click": 		true,
+		"Widget": 		true,
+		"require": 		true
+	}
+}
