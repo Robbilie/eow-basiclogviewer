@@ -10,20 +10,15 @@
 		// debugging
 		console.log("widget", widget);
 		
-		var tabs = eowTabs("div", {}, [{
-			name: "Log View",
-			content: []
-		}]);
+		widget.tabs.addTab("Log View");
 		
-		widget.appendChild(tabs);
-		
-		tabs.selectTab("Log View");
+		widget.tabs.selectTab("Log View");
 
 		var net = require('net');
 		var HOST = '127.0.0.1';
 		var PORT = 3273;
 
-		var datatab = tabs.getTab("Log View");
+		var datatab = widget.tabs.getTab("Log View");
 
 		net.createServer(function(sock) {
 
