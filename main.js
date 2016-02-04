@@ -2,7 +2,7 @@
 	"use strict";
 
 	Widget.initialize({
-		title: "Basic Log Viewer",
+		title: "EOW Basic Log Viewer",
 		width: 300,
 		height: 400,
 	}, widget => {
