@@ -1,24 +1,19 @@
 
 	"use strict";
 
-	Widget.initialize({
-		title: "EOW Basic Log Viewer",
-		width: 300,
-		height: 400,
-	}, widget => {
+	Widget.INSTANCE.loadPlugin({
+		title: "Log View",
+		name: "Robbilie/eow-basiclogviewer"
+	}, plugin => {
 
 		// debugging
-		console.log("widget", widget);
-		
-		widget.tabs.addTab("Log View");
-		
-		widget.tabs.selectTab("Log View");
+		console.log("plugin", plugin);
 
 		var net = require('net');
 		var HOST = '127.0.0.1';
 		var PORT = 3273;
 
-		var datatab = widget.tabs.getTab("Log View");
+		var datatab = plugin.getBody();
 
 		net.createServer(function(sock) {
 
