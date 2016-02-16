@@ -25,23 +25,8 @@
 
 		var datatab = tabs.getTab("Log View");
 
-		net.createServer(function(sock) {
+		
+		//eowEl(datatab).appendChildren(data.toString("utf8").split("\n").map(row => eowEl("div", { innerHTML: row })));
+		//datatab.scrollTop = datatab.scrollHeight;
 
-			// We have a connection - a socket object is assigned to the connection automatically
-			console.log('CONNECTED: ' + sock.remoteAddress +':'+ sock.remotePort);
-
-			// Add a 'data' event handler to this instance of socket
-			sock.on('data', function(data) {
-
-				eowEl(datatab).appendChildren(data.toString("utf8").split("\n").map(row => eowEl("div", { innerHTML: row })));
-				datatab.scrollTop = datatab.scrollHeight;
-
-			});
-
-			// Add a 'close' event handler to this instance of socket
-			sock.on('close', function(data) {
-				console.log('CLOSED: ' + sock.remoteAddress +' '+ sock.remotePort);
-			});
-
-		}).listen(PORT, HOST);
 	});
