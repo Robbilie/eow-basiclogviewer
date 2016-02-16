@@ -9,10 +9,6 @@
 		// debugging
 		console.log("plugin", plugin);
 
-		var net = require('net');
-		var HOST = '127.0.0.1';
-		var PORT = 3273;
-
 		var datatab = plugin.getBody();
 
 		

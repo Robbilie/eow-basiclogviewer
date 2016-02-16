@@ -1,11 +1,7 @@
 {
   "title":        "EOW Basic Log Viewer",
   "description":  "basic log viewer Widget for EOW",
-<<<<<<< HEAD
-  "version":      "0.0.2",
-=======
-  "version":      "0.0.4",
->>>>>>> 067f64505790089f948ad006998482c857b6b2f8
+  "version":      "0.0.6",
   "js":           "main.js",
   "author":       "Vincent Eneticum / Robert Schuh",
   "license":      "",
